@@ -1,0 +1,46 @@
+.detailedForecast {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+
+  &__list {
+    align-items: center;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    gap: 2rem;
+    height: 25rem;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 13.25rem;
+
+    &:hover {
+      background-color: $hoverBackgroundColor;
+    }
+    &:active {
+      background-color: $activeBackgroundColor;
+    }
+    > li {
+      width: 100%;
+    }
+    @media (min-width: $desktopBreakpoint) {
+      padding: 2rem 0;
+      > li {
+        width: 13.25rem;
+      }
+    }
+    &__time {
+      color: $textIndigo;
+      font-size: 3rem;
+    }
+    &__temperature {
+      font-size: 5.15rem;
+      font-weight: $fontBold;
+    }
+  }
+}

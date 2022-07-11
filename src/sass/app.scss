@@ -1,0 +1,12 @@
+@import "./variables";
+.app {
+  background-color: $primaryBackgroundColor;
+  color: $primaryTextColor;
+  font-family: $fontStack;
+  font-weight: $fontNormal;
+
+  &__svg {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+}

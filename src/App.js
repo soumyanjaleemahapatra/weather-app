@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import WeatherGetter from './WeatherGetter';
+import "./sass/app.scss";
+import WeatherHandler from "./Main";
 
 function App() {
   return (
-    <div className="App">
-      <WeatherGetter/>
+    <div className="app">
+      <WeatherHandler />
     </div>
   );
 }
